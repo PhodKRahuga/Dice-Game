@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* cursor: url(../public/img/cursor.jpg),auto; */
+}
+.bg{
+    /* background-image: url("../public/img/bg.jpg"); */
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: -1;
+    border : 1px solid black;
+    
+}
+.Hero{
+    padding-top: 5vh ;
+    padding-left: 15vw;
+}
+.Hero img{
+    max-width: 40vw;
+    /* border : 1px solid black; */
+}
+.Hero-content{
+    padding-top:30vh;
+    padding-bottom: 30vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Hero-content button{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2vh;
+    display: block;
+    width: 31vw;
+    height: 7vh;
+    background-color: black;
+    color:gold;;
+    border-radius: 10px;
+    font-size: 2.5vh;
+}
+.Hero-content button:hover{
+    background-color: white;
+    color: gold;
+    transition-duration: 0.2s;
+}
+.Hero{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+.Hero-content p{
+    display: block;
+    font-size: 12vh;
+}
+
+.down{
+    margin-top: 10vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+.score{
+    display: inline-grid;
+    grid-template-rows: auto auto;
+}
+.down img{
+    width: 15vw;
+    border : 0.6vw solid #e4b92a;
+    border-radius: 35px;
+    animation: flash 1s infinite;
+}
+.number{
+    display: inline-block;
+    font-size: 10vh;
+    /* border : 1px solid black; */
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.string{
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    /* border : 1px solid bla   ck; */
+    font-size: 3vh;
+    /* animation: flash 1s infinite; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    padding-right: 2vw;
+    /* border : 1px solid black; */
+}
+.select{
+    top: 50%;
+    margin-left: auto;
+    /* border : 1px solid black; */
+}
+nav button{
+    text-align: center;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* background-color: black; */
+    /* background-color: gold; */
+    height: 8vh;
+    margin: 0.5vw;
+    width: 8vh;
+    /* color: gold; */
+    /* color: black; */
+    /* border-radius: 10px; */
+    font-size: 2.5vh;
+}
+@keyframes flash {
+    0% {
+      border-color: #ffdd00; /* Initial border color */
+      /* background-color: #000000; Initial background color */
+      box-shadow: 0 0 10px #ffdd00; /* Initial outer glow effect */
+    }
+    50% {
+      border-color: #ff0000; /* Flashing border color */
+      /* background-color: #ff0000; Flashing background color */
+      box-shadow: 0 0 20px #ff0000; /* Flashing outer glow effect */
+    }
+    100% {
+      border-color: #ffdd00; /* Final border color */
+      /* background-color: #000000; Final background color */
+      box-shadow: 0 0 10px #ffdd00; /* Final outer glow effect */
+    }
+  }
+.casino-button {
+    border : 0.4vw solid #e4b92a;
+    border-radius: 50%;
+    font-family: 'Josefin Sans',sans-serif;
+    background-image: linear-gradient(to top, rgb(25,0,40),rgb(109,2,200)); 
+    /* background-image: radial-gradient(circle,  #ffffff, #000000); */
+    color: lightgray;
+    cursor: pointer; 
+    /* cursor: url(../public/img/cursor.png),default; */
+    animation: flash 1s infinite;
+}
+.below{
+    margin: 5vh;
+    display: flex;
+    /* border : 1px solid black; */
+    justify-content: center;
+}
+.below p{
+    margin-top: 2vh;
+    /* border : 1px solid black; */
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.below button{
+    display: block;
+    border : 1px solid black;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    color: gold;
+    animation: flash 1s infinite;
+}
+.reset{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+.below button:hover{
+    background-color: white;
+    color: gold;
+    transition-duration: 0.2s;
+}
+.animation{
+    border : 1px solid black;
+    min-width: 15vw;
+}
